@@ -7,9 +7,15 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 
-&mt { tapping-term-ms = <125>; };
+&mt {
+    tapping-term-ms = <125>;
+    flavor = "tap-preferred";
+};
 
-&lt { tapping-term-ms = <125>; };
+&lt {
+    tapping-term-ms = <125>;
+    flavor = "tap-preferred";
+};
 
 / {
     keymap {

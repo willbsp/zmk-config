@@ -24,7 +24,7 @@
         mac_to_win: mac_to_win {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&tog 1 &tog 2>;
+            bindings = <&tog 2 &tog 1>;
             label = "MAC_TO_WIN";
         };
     };

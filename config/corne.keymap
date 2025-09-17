@@ -27,6 +27,27 @@
             bindings = <&tog 2 &tog 1>;
             label = "MAC_TO_WIN";
         };
+
+        profile_1_mac: profile_1_mac {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&bt BT_SEL 0 &to 1 &tog 0>;
+            label = "PROFILE_1_MAC";
+        };
+
+        profile_2_linux: profile_2_linux {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&bt BT_SEL 1 &to 0>;
+            label = "PROFILE_2_LINUX";
+        };
+
+        profile_3_win: profile_3_win {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&bt BT_SEL 2 &to 2 &tog 0>;
+            label = "PROFILE_3_WIN";
+        };
     };
 
     keymap {
@@ -97,9 +118,9 @@
         media_layer {
             label = "Media";
             bindings = <
-&none  &none     &none     &none      &none      &none    &none           &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &none       &none  &none
-&none  &kp LALT  &kp LGUI  &kp LCTRL  &kp LSHFT  &none    &kp C_PREVIOUS  &kp C_VOL_DN          &kp C_VOL_UP          &kp C_NEXT  &none  &none
-&none  &none     &none     &none      &none      &none    &bt BT_CLR      &bt BT_PRV            &bt BT_NXT            &none       &none  &none
+&none  &none     &none     &none      &none      &none    &none           &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &none           &none  &none
+&none  &kp LALT  &kp LGUI  &kp LCTRL  &kp LSHFT  &none    &kp C_PREVIOUS  &kp C_VOL_DN          &kp C_VOL_UP          &kp C_NEXT      &none  &none
+&none  &none     &none     &none      &none      &none    &bt BT_CLR      &profile_2_linux      &profile_1_mac        &profile_3_win  &none  &none
                            &none      &none      &none    &none           &kp C_PLAY            &kp C_MUTE
             >;
         };

@@ -55,10 +55,10 @@
 
         base_overlay_win {
             bindings = <
-&kp LG(C)  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&kp LG(V)  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &kp LGUI
-&tog 2     &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                           &trans  &trans  &trans    &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &kp LGUI
+&tog 2  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
 
             label = "Win";

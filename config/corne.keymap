@@ -20,65 +20,35 @@
 };
 
 / {
-    macros {
-        mac_to_win: mac_to_win {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&tog 2 &tog 1>;
-            label = "MAC_TO_WIN";
-        };
-
-        profile_1_mac: profile_1_mac {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&bt BT_SEL 0 &to 1 &tog 0>;
-            label = "PROFILE_1_MAC";
-        };
-
-        profile_2_linux: profile_2_linux {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&bt BT_SEL 1 &to 0>;
-            label = "PROFILE_2_LINUX";
-        };
-
-        profile_3_win: profile_3_win {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&bt BT_SEL 2 &to 2 &tog 0>;
-            label = "PROFILE_3_WIN";
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
         base_layer {
-            label = "Linux";
+            label = "Mac";
             bindings = <
-&kp LC(C)  &kp Q       &kp W       &kp E         &kp R         &kp T        &kp Y        &kp U             &kp I         &kp O       &kp P               &to 9
-&kp LC(V)  &mt LALT A  &mt LGUI S  &mt LCTRL D   &mt LSHIFT F  &kp G        &kp H        &mt LEFT_SHIFT J  &mt RCTRL K   &mt RGUI L  &mt RALT SEMICOLON  &kp RG(D)
+&kp LG(C)  &kp Q       &kp W       &kp E         &kp R         &kp T        &kp Y        &kp U             &kp I         &kp O       &kp P               &to 9
+&kp LG(V)  &mt LALT A  &mt LGUI S  &mt LCTRL D   &mt LSHIFT F  &kp G        &kp H        &mt LEFT_SHIFT J  &mt RCTRL K   &mt RGUI L  &mt RALT SEMICOLON  &kp RG(D)
 &tog 1     &kp Z       &kp X       &kp C         &kp V         &kp B        &kp N        &kp M             &kp COMMA     &kp DOT     &kp FSLH            &none
                                    &lt 6 ESCAPE  &lt 5 SPACE   &lt 7 TAB    &lt 4 ENTER  &lt 3 BACKSPACE   &lt 8 DELETE
             >;
         };
 
-        base_overlay_mac {
+        base_overlay_linux {
             bindings = <
-&kp LG(C)    &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&kp LG(V)    &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &kp LG(SPACE)
-&mac_to_win  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                             &trans  &trans  &trans    &trans  &trans  &trans
+&kp LC(C)  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&kp LC(V)  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &kp LG(D)
+&tog 2     &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                           &trans  &trans  &trans    &trans  &trans  &trans
             >;
 
-            label = "Mac";
+            label = "Linux";
         };
 
         base_overlay_win {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &kp LGUI
-&tog 2  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&to 0   &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
                         &trans  &trans  &trans    &trans  &trans  &trans
             >;
 

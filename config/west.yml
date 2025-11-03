@@ -2,15 +2,15 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: gpeye
-      url-base: https://github.com/GPeye
+    - name: willbsp
+      url-base: https://github.com/willbsp
   projects:
     - name: zmk
       remote: zmkfirmware
       revision: v0.3
       import: app/west.yml
-    - name: urchin-peripheral-animation
-      remote: gpeye
+    - name: nice-view-custom
+      remote: willbsp
       revision: main
   self:
     path: config

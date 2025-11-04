@@ -27,13 +27,15 @@
             label = "CAPS";
             #binding-cells = <0>;
             bindings = <&caps_word>, <&kp CAPSLOCK>;
+
+            tapping-term-ms = <300>;
         };
 
         hml: home_row_mod_left {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
-            require-prior-idle-ms = <150>;
+            require-prior-idle-ms = <125>;
             tapping-term-ms = <280>;
             quick-tap-ms = <175>;
             bindings = <&kp>, <&kp>;
@@ -46,7 +48,7 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
-            require-prior-idle-ms = <150>;
+            require-prior-idle-ms = <125>;
             tapping-term-ms = <280>;
             quick-tap-ms = <175>;
             bindings = <&kp>, <&kp>;

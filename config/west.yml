@@ -12,5 +12,8 @@ manifest:
     - name: nice-view-custom
       remote: willbsp
       revision: main
+    - name: zmk-auto-layer
+      remote: urob
+      revision: v0.3
   self:
     path: config

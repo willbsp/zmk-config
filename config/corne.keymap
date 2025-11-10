@@ -8,6 +8,7 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
+#include <behaviours/num_word.dtsi>
 
 &mt {
     tapping-term-ms = <125>;
@@ -62,7 +63,7 @@
         base_layer {
             label = "Mac";
             bindings = <
-&none      &kp Q        &kp W        &kp E         &kp R          &kp T        &kp Y        &kp U              &kp I         &kp O        &kp P                &tog 9
+&num_word 3  &kp Q        &kp W        &kp E         &kp R          &kp T        &kp Y        &kp U              &kp I         &kp O        &kp P                &tog 9
 &kp LC(A)  &hml LALT A  &hml LGUI S  &hml LCTRL D  &hml LSHIFT F  &kp G        &kp H        &hmr LEFT_SHIFT J  &hmr RCTRL K  &hmr RGUI L  &hmr RALT SEMICOLON  &kp RG(SPACE)
 &tog 1     &kp Z        &kp X        &kp C         &kp V          &kp B        &kp N        &kp M              &kp COMMA     &kp DOT      &kp FSLH             &caps
                                      &lt 6 ESCAPE  &lt 5 SPACE    &lt 7 TAB    &lt 4 ENTER  &lt 3 BACKSPACE    &lt 8 DELETE

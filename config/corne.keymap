@@ -63,7 +63,7 @@
         base_layer {
             label = "Mac";
             bindings = <
-&num_word 3  &kp Q        &kp W        &kp E         &kp R          &kp T        &kp Y        &kp U              &kp I         &kp O        &kp P                &tog 9
+&num_word 12  &kp Q        &kp W        &kp E         &kp R          &kp T        &kp Y        &kp U              &kp I         &kp O        &kp P                &tog 9
 &kp LC(A)    &hml LALT A  &hml LGUI S  &hml LCTRL D  &hml LSHIFT F  &kp G        &kp H        &hmr LEFT_SHIFT J  &hmr RCTRL K  &hmr RGUI L  &hmr RALT SEMICOLON  &kp RG(SPACE)
 &tog 1       &kp Z        &kp X        &kp C         &kp V          &kp B        &kp N        &kp M              &kp COMMA     &kp DOT      &kp FSLH             &caps
                                        &lt 6 ESCAPE  &lt 5 SPACE    &lt 7 TAB    &lt 4 ENTER  &lt 3 BACKSPACE    &lt 8 DELETE
@@ -95,7 +95,7 @@
         number_layer {
             label = "Number";
             bindings = <
-&num_word 3  &kp LEFT_BRACKET  &kp N7  &kp N8   &kp N9  &kp RIGHT_BRACKET    &none    &none          &none       &none     &none     &none
+&none  &kp LEFT_BRACKET  &kp N7  &kp N8   &kp N9  &kp RIGHT_BRACKET    &none    &none          &none       &none     &none     &none
 &none        &kp SINGLE_QUOTE  &kp N4  &kp N5   &kp N6  &kp EQUAL            &none    &kp RSHIFT     &kp RCTRL   &kp RGUI  &kp RALT  &none
 &none        &kp GRAVE         &kp N1  &kp N2   &kp N3  &kp BACKSLASH        &none    &none          &none       &none     &none     &none
                                        &kp DOT  &kp N0  &kp MINUS            &kp RET  &kp BACKSPACE  &kp DELETE
@@ -185,7 +185,7 @@
         numword_layer {
             label = "Numword";
             bindings = <
-&num_word 3  &trans  &kp N7  &kp N8   &kp N9  &kp RIGHT_BRACKET    &trans   &trans         &trans      &trans  &trans  &trans
+&num_word 12  &trans  &kp N7  &kp N8   &kp N9  &kp RIGHT_BRACKET    &trans   &trans         &trans      &trans  &trans  &trans
 &trans       &trans  &kp N4  &kp N5   &kp N6  &kp EQUAL            &trans   &trans         &trans      &trans  &trans  &trans
 &trans       &trans  &kp N1  &kp N2   &kp N3  &kp BACKSLASH        &trans   &trans         &trans      &trans  &trans  &trans
                              &kp DOT  &kp N0  &kp MINUS            &kp RET  &kp BACKSPACE  &kp DELETE
